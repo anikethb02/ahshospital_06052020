@@ -15,8 +15,8 @@ import java.util.concurrent.TimeUnit;
 public class BrowserFactory {
 
     private static final int MAX_TIMEOUT = 60;
-    public static final String USERNAME = "anikethb1";
-    public static final String AUTOMATE_KEY = "aSCxGHwq84HsLLxqsgrn";
+    public static final String USERNAME = "aniketh1";
+    public static final String AUTOMATE_KEY = "f2AHN3qzUMBVip6yJRT4";
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
 
@@ -53,12 +53,11 @@ public class BrowserFactory {
             DesiredCapabilities caps = new DesiredCapabilities();
             if (BROWSER.equalsIgnoreCase("CHROME")) {
 
-                caps.setCapability("browser", "Chrome");
-                caps.setCapability("browser_version", "81.0");
-                caps.setCapability("os", "OS X");
-                caps.setCapability("os_version", "Catalina");
-                caps.setCapability("resolution", "1024x768");
-                caps.setCapability("name", "Bstack-[Java] Sample Test");
+    caps.setCapability("os", "Windows");
+    caps.setCapability("os_version", "10");
+    caps.setCapability("browser", "Chrome");
+    caps.setCapability("browser_version", "81");
+    caps.setCapability("name", "aniketh1's First Test");
 
 
             } else if (BROWSER.equalsIgnoreCase("FIREFOX")) {
